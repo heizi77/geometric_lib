@@ -1,0 +1,139 @@
+test_area_example (test_figures.CircleTestCase) ... ok
+test_area_float_radius (test_figures.CircleTestCase) ... ok
+test_area_negative_radius (test_figures.CircleTestCase) ... FAIL
+test_area_scales_quadratically (test_figures.CircleTestCase) ... ok
+test_area_string_radius (test_figures.CircleTestCase) ... ok
+test_area_unit_radius (test_figures.CircleTestCase) ... ok
+test_area_zero (test_figures.CircleTestCase) ... ok
+test_perimeter_example (test_figures.CircleTestCase) ... ok
+test_perimeter_float_radius (test_figures.CircleTestCase) ... ok
+test_perimeter_negative_radius (test_figures.CircleTestCase) ... FAIL
+test_perimeter_unit_radius (test_figures.CircleTestCase) ... ok
+test_perimeter_zero (test_figures.CircleTestCase) ... ok
+test_area_commutative (test_figures.RectangleTestCase) ... ok
+test_area_example (test_figures.RectangleTestCase) ... ok
+test_area_float_sides (test_figures.RectangleTestCase) ... ok
+test_area_negative_side (test_figures.RectangleTestCase) ... FAIL
+test_area_square_case (test_figures.RectangleTestCase) ... ok
+test_area_string_and_number (test_figures.RectangleTestCase) ... FAIL
+test_area_zero_side (test_figures.RectangleTestCase) ... ok
+test_perimeter_commutative (test_figures.RectangleTestCase) ... ok
+test_perimeter_example (test_figures.RectangleTestCase) ... ok
+test_perimeter_float_sides (test_figures.RectangleTestCase) ... ok
+test_perimeter_negative_side (test_figures.RectangleTestCase) ... FAIL
+test_perimeter_zero_sides (test_figures.RectangleTestCase) ... ok
+test_area_example (test_figures.SquareTestCase) ... ok
+test_area_float_side (test_figures.SquareTestCase) ... ok
+test_area_negative_side (test_figures.SquareTestCase) ... FAIL
+test_area_string_side (test_figures.SquareTestCase) ... ok
+test_area_zero (test_figures.SquareTestCase) ... ok
+test_perimeter_example (test_figures.SquareTestCase) ... ok
+test_perimeter_float_side (test_figures.SquareTestCase) ... ok
+test_perimeter_negative_side (test_figures.SquareTestCase) ... FAIL
+test_perimeter_string_side (test_figures.SquareTestCase) ... FAIL
+test_perimeter_zero (test_figures.SquareTestCase) ... ok
+test_area_example (test_figures.TriangleTestCase) ... ok
+test_area_float_values (test_figures.TriangleTestCase) ... ok
+test_area_negative_height (test_figures.TriangleTestCase) ... FAIL
+test_area_zero_base (test_figures.TriangleTestCase) ... ok
+test_area_zero_height (test_figures.TriangleTestCase) ... ok
+test_perimeter_equilateral (test_figures.TriangleTestCase) ... ok
+test_perimeter_example (test_figures.TriangleTestCase) ... ok
+test_perimeter_float_sides (test_figures.TriangleTestCase) ... ok
+test_perimeter_negative_side (test_figures.TriangleTestCase) ... FAIL
+test_perimeter_order_independent (test_figures.TriangleTestCase) ... ok
+test_perimeter_triangle_inequality (test_figures.TriangleTestCase) ... FAIL
+test_perimeter_zero_sides (test_figures.TriangleTestCase) ... ok
+
+======================================================================
+FAIL: test_area_negative_radius (test_figures.CircleTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 32, in test_area_negative_radius
+    circle.area(-3)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_negative_radius (test_figures.CircleTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 53, in test_perimeter_negative_radius
+    circle.perimeter(-3)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_area_negative_side (test_figures.RectangleTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 77, in test_area_negative_side
+    rectangle.area(-3, 5)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_area_string_and_number (test_figures.RectangleTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 82, in test_area_string_and_number
+    rectangle.area("ab", 3)
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_perimeter_negative_side (test_figures.RectangleTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 99, in test_perimeter_negative_side
+    rectangle.perimeter(-3, 5)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_area_negative_side (test_figures.SquareTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 117, in test_area_negative_side
+    square.area(-4)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_negative_side (test_figures.SquareTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 135, in test_perimeter_negative_side
+    square.perimeter(-4)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_string_side (test_figures.SquareTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 139, in test_perimeter_string_side
+    square.perimeter("a")
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_area_negative_height (test_figures.TriangleTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 160, in test_area_negative_height
+    triangle.area(4, -5)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_negative_side (test_figures.TriangleTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 180, in test_perimeter_negative_side
+    triangle.perimeter(-3, 4, 5)
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_perimeter_triangle_inequality (test_figures.TriangleTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/misha/geometric_lib/test_figures.py", line 185, in test_perimeter_triangle_inequality
+    triangle.perimeter(1, 1, 10)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.001s
+
+FAILED (failures=11)
