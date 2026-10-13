@@ -131,5 +131,6 @@ print(p)  # 12
 
 ## История изменений проекта
 
-* `d078c8d` L-03: Docs added
-* `8ba9aeb` L-03: Circle and square added   
+* `3855bad` added doc for functions
+* `d078c8d` (origin/main, origin/HEAD, main) L-03: Docs added
+* `8ba9aeb` L-03: Circle and square added 
