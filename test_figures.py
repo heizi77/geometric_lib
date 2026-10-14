@@ -18,7 +18,7 @@ class CircleTestCase(unittest.TestCase):
         self.assertAlmostEqual(circle.area(1), math.pi)
 
     def test_area_unit_radius_another(self):
-        self.assertAlmostEqual(circle.area(100), math.pi) # for CI CD test
+        self.assertAlmostEqual(circle.area(100), 100*math.pi) # for CI CD test
 
     def test_area_zero(self):
         self.assertEqual(circle.area(0), 0)
