@@ -133,4 +133,4 @@ print(p)  # 12
 
 * `3855bad` added doc for functions
 * `d078c8d` (origin/main, origin/HEAD, main) L-03: Docs added
-* `8ba9aeb` L-03: Circle and square added 
+* `8ba9aeb` L-03: Circle and square added
